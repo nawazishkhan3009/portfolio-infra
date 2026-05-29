@@ -1,0 +1,7 @@
+# Local Terraform state
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Terraform variables containing secrets/project IDs
+terraform.tfvars
