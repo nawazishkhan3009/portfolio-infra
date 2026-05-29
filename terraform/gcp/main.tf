@@ -64,3 +64,9 @@ resource "google_container_node_pool" "primary" {
     ]
   }
 }
+
+resource "google_compute_address" "portfolio_ip" {
+  name         = "portfolio-ip"
+  region       = var.region  # europe-west1
+  description  = "Static IP for portfolio GKE"
+}
